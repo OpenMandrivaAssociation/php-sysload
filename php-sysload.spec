@@ -6,14 +6,13 @@
 Summary:	PHP Sysload extension
 Name:		php-%{modname}
 Version:	1.0.0
-Release:	%mkrel 1
+Release:	1
 Group:		Development/PHP
 License:	PHP
 URL:		http://www.xarg.org/project/php-sysload/
 Source0:	http://www.xarg.org/download/sysload-%{version}.tar.gz
 Source1:	B20_sysload.ini
 BuildRequires:	php-devel >= 3:5.2.0
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 PHP Sysload is a simple monitoring Extension for PHP backends behind a reverse
@@ -39,7 +38,6 @@ phpize
 mv modules/*.so .
 
 %install
-rm -rf %{buildroot} 
 
 install -d %{buildroot}%{_libdir}/php/extensions
 install -d %{buildroot}%{_sysconfdir}/php.d
@@ -59,11 +57,7 @@ if [ "$1" = "0" ]; then
     fi
 fi
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc CREDIT
 %config(noreplace) %attr(0644,root,root) %{_sysconfdir}/php.d/%{inifile}
 %attr(0755,root,root) %{_libdir}/php/extensions/%{soname}
