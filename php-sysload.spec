@@ -6,7 +6,7 @@
 Summary:	PHP Sysload extension
 Name:		php-%{modname}
 Version:	1.0.0
-Release:	1
+Release:	2
 Group:		Development/PHP
 License:	PHP
 URL:		http://www.xarg.org/project/php-sysload/
