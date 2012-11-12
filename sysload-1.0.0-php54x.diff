@@ -1,0 +1,11 @@
+--- sysload.c	2008-07-25 02:26:12.000000000 +0200
++++ sysload.c.oden	2012-05-06 10:43:14.656595073 +0200
+@@ -23,7 +23,7 @@
+ #include "php_sysload.h"
+ #include "SAPI.h"
+ 
+-static function_entry sysload_functions[] = {
++static zend_function_entry sysload_functions[] = {
+     {NULL, NULL, NULL}
+ };
+ 
