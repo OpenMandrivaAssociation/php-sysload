@@ -64,3 +64,33 @@ fi
 %config(noreplace) %attr(0644,root,root) %{_sysconfdir}/php.d/%{inifile}
 %attr(0755,root,root) %{_libdir}/php/extensions/%{soname}
 
+
+
+%changelog
+* Sun May 06 2012 Oden Eriksson <oeriksson@mandriva.com> 1.0.0-5
++ Revision: 797005
+- fix build
+- rebuild for php-5.4.x
+
+* Sun Jan 15 2012 Oden Eriksson <oeriksson@mandriva.com> 1.0.0-4
++ Revision: 761333
+- rebuild
+
+* Wed Aug 24 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0.0-3
++ Revision: 696478
+- rebuilt for php-5.3.8
+
+* Fri Aug 19 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0.0-2
++ Revision: 695473
+- rebuilt for php-5.3.7
+
+  + Nicolas Lécureuil <nlecureuil@mandriva.com>
+    - Clean spec file layout
+
+* Fri May 20 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0.0-1
++ Revision: 676259
+- import php-sysload
+
+
+* Fri May 20 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0.0-1mdv2010.2
+- initial Mandriva package
