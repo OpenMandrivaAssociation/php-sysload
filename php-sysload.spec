@@ -9,7 +9,7 @@ Version:	1.0.0
 Release:	6
 Group:		Development/PHP
 License:	PHP
-URL:		http://www.xarg.org/project/php-sysload/
+URL:		https://www.xarg.org/project/php-sysload/
 Source0:	http://www.xarg.org/download/sysload-%{version}.tar.gz
 Source1:	B20_sysload.ini
 Patch0:		sysload-1.0.0-php54x.diff
