@@ -13,6 +13,11 @@ URL:		https://www.xarg.org/project/php-sysload/
 Source0:	http://www.xarg.org/download/sysload-%{version}.tar.gz
 Source1:	B20_sysload.ini
 Patch0:		sysload-1.0.0-php54x.diff
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	php-devel >= 3:5.2.0
 
 %description
